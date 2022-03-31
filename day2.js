@@ -36,6 +36,7 @@ function solve(meal_cost, tip_percent, tax_percent) {
   const taxAmount = taxPercent * meal_cost;
   const total = (meal_cost + tipAmount + taxAmount).toFixed(0);
   console.log(total);
+  console.log("test");
 }
 
 function main() {
