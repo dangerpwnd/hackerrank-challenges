@@ -27,16 +27,17 @@ function main() {
     case 1:
       console.log("Weird");
       break;
-    case 0 && N >= 2 && N <= 5:
-      console.log("Not Weird");
+    case 0:
+      if (N >= 2 && N <= 5) {
+        console.log("Not Weird");
+      } else if (N >= 6 && N <= 20) {
+        console.log("Weird");
+      } else {
+        console.log("Not Weird");
+      }
       break;
-    case 0 && N >= 6 && N <= 20:
-      console.log("Weird");
-      break;
-    case 0 && N > 20:
-      console.log("Not Weird");
     default:
-      console.log("That's weird. It's not working.");
+      console.log(`That's weird. It's not working. Is ${N} a number?`);
       break;
   }
 }
